@@ -1,0 +1,11 @@
+{
+	"active": true,
+	"externalReferenceCode": "L_STYLE_EDITOR",
+	"groupExternalReferenceCode": "[$ACCOUNT_ENTRY_GROUP_ERC:L_AI_HUB$]",
+	"name": "Style Editor",
+	"scope": "ai",
+	"title": "Style Editor",
+	"title_i18n": {
+		"en_US": "Style Editor"
+	}
+}

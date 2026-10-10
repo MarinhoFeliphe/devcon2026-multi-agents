@@ -1,0 +1,11 @@
+{
+	"active": true,
+	"externalReferenceCode": "L_CREATIVE_WRITER",
+	"groupExternalReferenceCode": "[$ACCOUNT_ENTRY_GROUP_ERC:L_AI_HUB$]",
+	"name": "Creative Writer",
+	"scope": "ai",
+	"title": "Creative Writer",
+	"title_i18n": {
+		"en_US": "Creative Writer"
+	}
+}

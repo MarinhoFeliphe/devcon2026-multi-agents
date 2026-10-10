@@ -1,0 +1,11 @@
+{
+	"active": true,
+	"externalReferenceCode": "L_AUDIENCE_EDITOR",
+	"groupExternalReferenceCode": "[$ACCOUNT_ENTRY_GROUP_ERC:L_AI_HUB$]",
+	"name": "Audience Editor",
+	"scope": "ai",
+	"title": "Audience Editor",
+	"title_i18n": {
+		"en_US": "Audience Editor"
+	}
+}
