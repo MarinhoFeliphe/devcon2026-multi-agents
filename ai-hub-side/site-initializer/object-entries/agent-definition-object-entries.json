@@ -90,6 +90,19 @@
 				"en_US": "Style Editor"
 			},
 			"workflowDefinitionName": "Style Editor"
+		},
+		{
+			"active": true,
+			"description": "This reviewing agent scores how well a story aligns with a given style, returning only a score between 0.0 and 1.0, extracting the parameters 'story' (the full story text) and 'style' (for example 'noir' or 'pirate speak').",
+			"externalReferenceCode": "L_STYLE_SCORER",
+			"inputVariables": "story,style",
+			"outputVariable": "score",
+			"r_accountToAIHubAgentDefinitions_accountEntryERC": "L_AI_HUB",
+			"system": false,
+			"title_i18n": {
+				"en_US": "Style Scorer"
+			},
+			"workflowDefinitionName": "Style Scorer"
 		}
 	]
 }

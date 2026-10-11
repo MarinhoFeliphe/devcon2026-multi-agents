@@ -1,0 +1,11 @@
+{
+	"active": true,
+	"externalReferenceCode": "L_STYLE_SCORER",
+	"groupExternalReferenceCode": "[$ACCOUNT_ENTRY_GROUP_ERC:L_AI_HUB$]",
+	"name": "Style Scorer",
+	"scope": "ai",
+	"title": "Style Scorer",
+	"title_i18n": {
+		"en_US": "Style Scorer"
+	}
+}
