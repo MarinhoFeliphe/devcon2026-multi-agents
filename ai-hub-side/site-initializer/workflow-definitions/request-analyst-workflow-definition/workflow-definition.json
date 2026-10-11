@@ -1,0 +1,11 @@
+{
+	"active": true,
+	"externalReferenceCode": "L_REQUEST_ANALYST",
+	"groupExternalReferenceCode": "[$ACCOUNT_ENTRY_GROUP_ERC:L_AI_HUB$]",
+	"name": "Request Analyst",
+	"scope": "ai",
+	"title": "Request Analyst",
+	"title_i18n": {
+		"en_US": "Request Analyst"
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"active": true,
+	"externalReferenceCode": "L_ART_EXPERT",
+	"groupExternalReferenceCode": "[$ACCOUNT_ENTRY_GROUP_ERC:L_AI_HUB$]",
+	"name": "Art Expert",
+	"scope": "ai",
+	"title": "Art Expert",
+	"title_i18n": {
+		"en_US": "Art Expert"
+	}
+}

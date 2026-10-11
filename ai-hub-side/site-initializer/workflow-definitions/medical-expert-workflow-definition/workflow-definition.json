@@ -1,0 +1,11 @@
+{
+	"active": true,
+	"externalReferenceCode": "L_MEDICAL_EXPERT",
+	"groupExternalReferenceCode": "[$ACCOUNT_ENTRY_GROUP_ERC:L_AI_HUB$]",
+	"name": "Medical Expert",
+	"scope": "ai",
+	"title": "Medical Expert",
+	"title_i18n": {
+		"en_US": "Medical Expert"
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"active": true,
+	"externalReferenceCode": "L_LEGAL_EXPERT",
+	"groupExternalReferenceCode": "[$ACCOUNT_ENTRY_GROUP_ERC:L_AI_HUB$]",
+	"name": "Legal Expert",
+	"scope": "ai",
+	"title": "Legal Expert",
+	"title_i18n": {
+		"en_US": "Legal Expert"
+	}
+}

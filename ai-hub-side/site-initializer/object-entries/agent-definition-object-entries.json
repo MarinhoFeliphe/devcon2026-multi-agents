@@ -2,6 +2,19 @@
 	"object-entries": [
 		{
 			"active": true,
+			"description": "This expert agent answers requests about art, such as painting, drawing, sculpture, art history, or creative techniques, in no more than 3 sentences, extracting the parameter 'request'.",
+			"externalReferenceCode": "L_ART_EXPERT",
+			"inputVariables": "request",
+			"outputVariable": "answer",
+			"r_accountToAIHubAgentDefinitions_accountEntryERC": "L_AI_HUB",
+			"system": false,
+			"title_i18n": {
+				"en_US": "Art Expert"
+			},
+			"workflowDefinitionName": "Art Expert"
+		},
+		{
+			"active": true,
 			"description": "This editing agent rewrites an existing story the user provides so it better fits a target audience, extracting the parameters 'story' (the full story text) and 'audience' (for example 'young adults' or 'children').",
 			"externalReferenceCode": "L_AUDIENCE_EDITOR",
 			"inputVariables": "audience,story",
@@ -25,6 +38,45 @@
 				"en_US": "Creative Writer"
 			},
 			"workflowDefinitionName": "Creative Writer"
+		},
+		{
+			"active": true,
+			"description": "This expert agent answers requests about legal matters, such as contracts, rights, disputes, or regulations, in no more than 3 sentences, extracting the parameter 'request'.",
+			"externalReferenceCode": "L_LEGAL_EXPERT",
+			"inputVariables": "request",
+			"outputVariable": "answer",
+			"r_accountToAIHubAgentDefinitions_accountEntryERC": "L_AI_HUB",
+			"system": false,
+			"title_i18n": {
+				"en_US": "Legal Expert"
+			},
+			"workflowDefinitionName": "Legal Expert"
+		},
+		{
+			"active": true,
+			"description": "This expert agent answers requests about health and medicine, such as injuries, symptoms, or treatments, in no more than 3 sentences, extracting the parameter 'request'.",
+			"externalReferenceCode": "L_MEDICAL_EXPERT",
+			"inputVariables": "request",
+			"outputVariable": "answer",
+			"r_accountToAIHubAgentDefinitions_accountEntryERC": "L_AI_HUB",
+			"system": false,
+			"title_i18n": {
+				"en_US": "Medical Expert"
+			},
+			"workflowDefinitionName": "Medical Expert"
+		},
+		{
+			"active": true,
+			"description": "This agent analyzes a request and classifies the expertise needed to answer it, returning exactly one of 'medical', 'legal', or 'art', extracting the parameter 'request'.",
+			"externalReferenceCode": "L_REQUEST_ANALYST",
+			"inputVariables": "request",
+			"outputVariable": "expertise",
+			"r_accountToAIHubAgentDefinitions_accountEntryERC": "L_AI_HUB",
+			"system": false,
+			"title_i18n": {
+				"en_US": "Request Analyst"
+			},
+			"workflowDefinitionName": "Request Analyst"
 		},
 		{
 			"active": true,
