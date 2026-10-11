@@ -1,0 +1,11 @@
+{
+	"active": true,
+	"externalReferenceCode": "L_FOOD_EXPERT",
+	"groupExternalReferenceCode": "[$ACCOUNT_ENTRY_GROUP_ERC:L_AI_HUB$]",
+	"name": "Food Expert",
+	"scope": "ai",
+	"title": "Food Expert",
+	"title_i18n": {
+		"en_US": "Food Expert"
+	}
+}
