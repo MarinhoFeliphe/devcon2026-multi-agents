@@ -630,6 +630,846 @@
 			"title_i18n": {
 				"en_US": "Novel Creator"
 			}
+		},
+		{
+			"active": true,
+			"content": {
+				"#child-nodes": [
+					{
+						"#tag-name": "name",
+						"#value": "Expert Router"
+					},
+					{
+						"#tag-name": "version",
+						"#value": "1"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "requestAnalyst"
+							},
+							{
+								"#tag-name": "description",
+								"#value": "Invoke an AI Hub Agent"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        273,",
+									"        169",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Request Analyst",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#tag-name": "agent-definition-external-reference-code",
+								"#value": "L_REQUEST_ANALYST"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Request Analyst Task Result",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "requestAnalystTaskResult"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "requestAnalystTaskResult"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "ai-hub-agent"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "requestAnalystTaskResult"
+							},
+							{
+								"#tag-name": "description",
+								"#value": "Create a task result with the agent output"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        274,",
+									"        329",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#tag-name": "name",
+												"#value": "createTaskResult"
+											},
+											{
+												"#tag-name": "script"
+											},
+											{
+												"#tag-name": "script-language",
+												"#value": "function#liferay-aihub-multi-agents-etc-spring-boot-workflow-action-expert-request-task-result"
+											},
+											{
+												"#tag-name": "execution-type",
+												"#value": "onAssignment"
+											}
+										],
+										"#tag-name": "action"
+									}
+								],
+								"#tag-name": "actions"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "user"
+									}
+								],
+								"#tag-name": "assignments"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Request Analyst Task Result",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Medical",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "medical"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "medicalExpert"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									},
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Legal",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "legal"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "legalExpert"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "false"
+											}
+										],
+										"#tag-name": "transition"
+									},
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Art",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "art"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "artExpert"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "false"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "task"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "medicalExpert"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        598.88343704944,",
+									"        515.5826571877933",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Medical Expert",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#tag-name": "agent-definition-external-reference-code",
+								"#value": "L_MEDICAL_EXPERT"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Medical Expert Task Result",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "medicalExpertTaskResult"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "medicalExpertTaskResult"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "ai-hub-agent"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "medicalExpertTaskResult"
+							},
+							{
+								"#tag-name": "description",
+								"#value": "Create a task result with the agent output"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        600,",
+									"        675",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#tag-name": "name",
+												"#value": "createTaskResult"
+											},
+											{
+												"#tag-name": "script"
+											},
+											{
+												"#tag-name": "script-language",
+												"#value": "function#liferay-aihub-multi-agents-etc-spring-boot-workflow-action-expert-request-task-result"
+											},
+											{
+												"#tag-name": "execution-type",
+												"#value": "onAssignment"
+											}
+										],
+										"#tag-name": "action"
+									}
+								],
+								"#tag-name": "actions"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "user"
+									}
+								],
+								"#tag-name": "assignments"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Medical Expert Task Result",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "End",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "end"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "end"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "task"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "legalExpert"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        278,",
+									"        513",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Legal Expert",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#tag-name": "agent-definition-external-reference-code",
+								"#value": "L_LEGAL_EXPERT"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Legal Expert Task Result",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "legalExpertTaskResult"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "legalExpertTaskResult"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "ai-hub-agent"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "legalExpertTaskResult"
+							},
+							{
+								"#tag-name": "description",
+								"#value": "Create a task result with the agent output"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        274.8834700293807,",
+									"        677.1843885037009",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#tag-name": "name",
+												"#value": "createTaskResult"
+											},
+											{
+												"#tag-name": "script"
+											},
+											{
+												"#tag-name": "script-language",
+												"#value": "function#liferay-aihub-multi-agents-etc-spring-boot-workflow-action-expert-request-task-result"
+											},
+											{
+												"#tag-name": "execution-type",
+												"#value": "onAssignment"
+											}
+										],
+										"#tag-name": "action"
+									}
+								],
+								"#tag-name": "actions"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "user"
+									}
+								],
+								"#tag-name": "assignments"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Legal Expert Task Result",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "End",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "end"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "end"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "task"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "artExpert"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        -48,",
+									"        514",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Art Expert",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#tag-name": "agent-definition-external-reference-code",
+								"#value": "L_ART_EXPERT"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Art Expert Task Result",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "artExpertTaskResult"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "artExpertTaskResult"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "ai-hub-agent"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "artExpertTaskResult"
+							},
+							{
+								"#tag-name": "description",
+								"#value": "Create a task result with the agent output"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        -47.65041236058842,",
+									"        675.8348014995264",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#tag-name": "name",
+												"#value": "createTaskResult"
+											},
+											{
+												"#tag-name": "script"
+											},
+											{
+												"#tag-name": "script-language",
+												"#value": "function#liferay-aihub-multi-agents-etc-spring-boot-workflow-action-expert-request-task-result"
+											},
+											{
+												"#tag-name": "execution-type",
+												"#value": "onAssignment"
+											}
+										],
+										"#tag-name": "action"
+									}
+								],
+								"#tag-name": "actions"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "user"
+									}
+								],
+								"#tag-name": "assignments"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Art Expert Task Result",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "End",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "end"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "end"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "task"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "start"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        273,",
+									"        25",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#tag-name": "initial",
+								"#value": "true"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Start",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Request Analyst",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "requestAnalyst"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "requestAnalyst"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "state"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "end"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"terminal\": true,",
+									"    \"xy\": [",
+									"        275,",
+									"        897",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "End",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							}
+						],
+						"#tag-name": "state"
+					}
+				],
+				"#tag-name": "workflow-definition",
+				"xmlns": "urn:liferay.com:liferay-workflow_7.4.0",
+				"xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+				"xsi:schemaLocation": "urn:liferay.com:liferay-workflow_7.4.0 http://www.liferay.com/dtd/liferay-workflow-definition_7_4_0.xsd"
+			},
+			"externalReferenceCode": "EXPERT_ROUTER",
+			"name": "Expert Router",
+			"title": "Expert Router",
+			"title_i18n": {
+				"en_US": "Expert Router"
+			}
 		}
 	]
 }

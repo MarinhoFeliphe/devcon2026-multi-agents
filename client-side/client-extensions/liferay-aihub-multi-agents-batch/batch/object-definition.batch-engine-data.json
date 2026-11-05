@@ -307,6 +307,138 @@
 				"code": 0
 			},
 			"titleObjectFieldName": "topic"
+		},
+		{
+			"active": true,
+			"externalReferenceCode": "EXPERT_REQUEST",
+			"label": {
+				"en_US": "Expert Request"
+			},
+			"name": "ExpertRequest",
+			"objectActions": [
+				{
+					"active": true,
+					"conditionExpression": "",
+					"externalReferenceCode": "EXPERT_REQUEST_START_EXPERT_ROUTER",
+					"label": {
+						"en_US": "Start Expert Router"
+					},
+					"name": "startExpertRouter",
+					"objectActionExecutorKey": "function#liferay-aihub-multi-agents-etc-spring-boot-object-action-expert-router",
+					"objectActionTriggerKey": "onAfterAdd",
+					"parameters": {
+					}
+				}
+			],
+			"objectFields": [
+				{
+					"DBType": "Clob",
+					"businessType": "LongText",
+					"externalReferenceCode": "EXPERT_REQUEST_REQUEST",
+					"indexed": true,
+					"indexedAsKeyword": false,
+					"label": {
+						"en_US": "Request"
+					},
+					"name": "request",
+					"required": true
+				}
+			],
+			"objectFolderExternalReferenceCode": "AGENT_WORKFLOWS",
+			"objectLayouts": [
+				{
+					"defaultObjectLayout": true,
+					"name": {
+						"en_US": "Expert Request"
+					},
+					"objectLayoutTabs": [
+						{
+							"name": {
+								"en_US": "Details"
+							},
+							"objectLayoutBoxes": [
+								{
+									"collapsable": false,
+									"name": {
+										"en_US": "Request"
+									},
+									"objectLayoutRows": [
+										{
+											"objectLayoutColumns": [
+												{
+													"objectFieldName": "request",
+													"priority": 0,
+													"size": 12
+												}
+											],
+											"priority": 0
+										}
+									],
+									"priority": 0,
+									"type": "regular"
+								}
+							],
+							"priority": 0
+						},
+						{
+							"name": {
+								"en_US": "Task Results"
+							},
+							"objectLayoutBoxes": [
+							],
+							"objectRelationshipExternalReferenceCode": "EXPERT_REQUEST_TASK_RESULTS",
+							"priority": 1
+						}
+					]
+				}
+			],
+			"objectRelationships": [
+				{
+					"deletionType": "cascade",
+					"externalReferenceCode": "EXPERT_REQUEST_TASK_RESULTS",
+					"label": {
+						"en_US": "Task Results"
+					},
+					"name": "expertRequestTaskResults",
+					"objectDefinitionExternalReferenceCode1": "EXPERT_REQUEST",
+					"objectDefinitionExternalReferenceCode2": "TASK_RESULT",
+					"objectDefinitionName2": "TaskResult",
+					"type": "oneToMany"
+				}
+			],
+			"objectViews": [
+				{
+					"defaultObjectView": true,
+					"externalReferenceCode": "EXPERT_REQUEST_DEFAULT_VIEW",
+					"name": {
+						"en_US": "Expert Requests"
+					},
+					"objectViewColumns": [
+						{
+							"objectFieldName": "id",
+							"priority": 0
+						},
+						{
+							"objectFieldName": "request",
+							"priority": 1
+						}
+					],
+					"objectViewFilterColumns": [
+					],
+					"objectViewSortColumns": [
+					]
+				}
+			],
+			"panelCategoryKey": "control_panel.object",
+			"pluralLabel": {
+				"en_US": "Expert Requests"
+			},
+			"portlet": true,
+			"scope": "company",
+			"status": {
+				"code": 0
+			},
+			"titleObjectFieldName": "request"
 		}
 	]
 }
