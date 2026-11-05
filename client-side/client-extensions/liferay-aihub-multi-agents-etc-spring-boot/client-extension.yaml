@@ -1,0 +1,15 @@
+assemble:
+    -   fromTask: bootJar
+liferay-aihub-multi-agents-etc-spring-boot-oahs:
+    .serviceAddress: liferay-aihub-multi-agents-etc-spring-boot:58082
+    .serviceScheme: http
+    name: Liferay AI Hub Multi Agents Etc Spring Boot OAuth Application Headless Server
+    scopes:
+        -   Liferay.Headless.Admin.Workflow.everything
+        -   c_taskresult.everything
+    type: oAuthApplicationHeadlessServer
+liferay-aihub-multi-agents-etc-spring-boot-oaua:
+    .serviceAddress: liferay-aihub-multi-agents-etc-spring-boot:58082
+    .serviceScheme: http
+    name: Liferay AI Hub Multi Agents Etc Spring Boot OAuth Application User Agent
+    type: oAuthApplicationUserAgent
