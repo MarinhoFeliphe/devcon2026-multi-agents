@@ -101,6 +101,212 @@
 				"code": 0
 			},
 			"titleObjectFieldName": "assignee"
+		},
+		{
+			"active": true,
+			"externalReferenceCode": "NOVEL",
+			"label": {
+				"en_US": "Novel"
+			},
+			"name": "Novel",
+			"objectActions": [
+				{
+					"active": true,
+					"conditionExpression": "",
+					"externalReferenceCode": "NOVEL_START_NOVEL_CREATOR",
+					"label": {
+						"en_US": "Start Novel Creator"
+					},
+					"name": "startNovelCreator",
+					"objectActionExecutorKey": "function#liferay-aihub-multi-agents-etc-spring-boot-object-action-novel-creator",
+					"objectActionTriggerKey": "onAfterAdd",
+					"parameters": {
+					}
+				}
+			],
+			"objectFields": [
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"externalReferenceCode": "NOVEL_AUDIENCE",
+					"indexed": true,
+					"indexedAsKeyword": false,
+					"label": {
+						"en_US": "Audience"
+					},
+					"name": "audience",
+					"required": false
+				},
+				{
+					"DBType": "Clob",
+					"businessType": "RichText",
+					"externalReferenceCode": "NOVEL_CONTENT",
+					"indexed": true,
+					"indexedAsKeyword": false,
+					"label": {
+						"en_US": "Content"
+					},
+					"name": "content",
+					"required": false
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"externalReferenceCode": "NOVEL_STYLE",
+					"indexed": true,
+					"indexedAsKeyword": false,
+					"label": {
+						"en_US": "Style"
+					},
+					"name": "style",
+					"required": false
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"externalReferenceCode": "NOVEL_TOPIC",
+					"indexed": true,
+					"indexedAsKeyword": false,
+					"label": {
+						"en_US": "Topic"
+					},
+					"name": "topic",
+					"required": false
+				}
+			],
+			"objectFolderExternalReferenceCode": "AGENT_WORKFLOWS",
+			"objectLayouts": [
+				{
+					"defaultObjectLayout": true,
+					"name": {
+						"en_US": "Novel"
+					},
+					"objectLayoutTabs": [
+						{
+							"name": {
+								"en_US": "Details"
+							},
+							"objectLayoutBoxes": [
+								{
+									"collapsable": false,
+									"name": {
+										"en_US": "Brief"
+									},
+									"objectLayoutRows": [
+										{
+											"objectLayoutColumns": [
+												{
+													"objectFieldName": "topic",
+													"priority": 0,
+													"size": 4
+												},
+												{
+													"objectFieldName": "audience",
+													"priority": 1,
+													"size": 4
+												},
+												{
+													"objectFieldName": "style",
+													"priority": 2,
+													"size": 4
+												}
+											],
+											"priority": 0
+										}
+									],
+									"priority": 0,
+									"type": "regular"
+								},
+								{
+									"collapsable": false,
+									"name": {
+										"en_US": "Story"
+									},
+									"objectLayoutRows": [
+										{
+											"objectLayoutColumns": [
+												{
+													"objectFieldName": "content",
+													"priority": 0,
+													"size": 12
+												}
+											],
+											"priority": 0
+										}
+									],
+									"priority": 1,
+									"type": "regular"
+								}
+							],
+							"priority": 0
+						},
+						{
+							"name": {
+								"en_US": "Task Results"
+							},
+							"objectLayoutBoxes": [
+							],
+							"objectRelationshipExternalReferenceCode": "NOVEL_TASK_RESULTS",
+							"priority": 1
+						}
+					]
+				}
+			],
+			"objectRelationships": [
+				{
+					"deletionType": "cascade",
+					"externalReferenceCode": "NOVEL_TASK_RESULTS",
+					"label": {
+						"en_US": "Task Results"
+					},
+					"name": "novelTaskResults",
+					"objectDefinitionExternalReferenceCode1": "NOVEL",
+					"objectDefinitionExternalReferenceCode2": "TASK_RESULT",
+					"objectDefinitionName2": "TaskResult",
+					"type": "oneToMany"
+				}
+			],
+			"objectViews": [
+				{
+					"defaultObjectView": true,
+					"externalReferenceCode": "NOVEL_DEFAULT_VIEW",
+					"name": {
+						"en_US": "Novels"
+					},
+					"objectViewColumns": [
+						{
+							"objectFieldName": "id",
+							"priority": 0
+						},
+						{
+							"objectFieldName": "audience",
+							"priority": 1
+						},
+						{
+							"objectFieldName": "style",
+							"priority": 2
+						},
+						{
+							"objectFieldName": "topic",
+							"priority": 3
+						}
+					],
+					"objectViewFilterColumns": [
+					],
+					"objectViewSortColumns": [
+					]
+				}
+			],
+			"panelCategoryKey": "control_panel.object",
+			"pluralLabel": {
+				"en_US": "Novels"
+			},
+			"portlet": true,
+			"scope": "company",
+			"status": {
+				"code": 0
+			},
+			"titleObjectFieldName": "topic"
 		}
 	]
 }

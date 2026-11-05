@@ -1,0 +1,635 @@
+{
+	"configuration": {
+		"className": "com.liferay.headless.admin.workflow.dto.v1_0.WorkflowDefinition",
+		"parameters": {
+			"containsHeaders": "true",
+			"createStrategy": "INSERT",
+			"importStrategy": "ON_ERROR_FAIL",
+			"updateStrategy": "UPDATE"
+		},
+		"taskItemDelegateName": "DEFAULT"
+	},
+	"items": [
+		{
+			"active": true,
+			"content": {
+				"#child-nodes": [
+					{
+						"#tag-name": "name",
+						"#value": "Novel Creator"
+					},
+					{
+						"#tag-name": "version",
+						"#value": "1"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "creativeWriter"
+							},
+							{
+								"#tag-name": "description",
+								"#value": "Invoke an AI Hub Agent"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        276,",
+									"        242",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Creative Writer",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#tag-name": "agent-definition-external-reference-code",
+								"#value": "L_CREATIVE_WRITER"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Creative Writer Task Result",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "creativeWriterTaskResult"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "creativeWriterTaskResult"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "ai-hub-agent"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "creativeWriterTaskResult"
+							},
+							{
+								"#tag-name": "description",
+								"#value": "Create a task result with the agent output"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        750.0606936424815,",
+									"        240.7996855868754",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#tag-name": "name",
+												"#value": "createTaskResult"
+											},
+											{
+												"#tag-name": "script"
+											},
+											{
+												"#tag-name": "script-language",
+												"#value": "function#liferay-aihub-multi-agents-etc-spring-boot-workflow-action-task-result"
+											},
+											{
+												"#tag-name": "execution-type",
+												"#value": "onAssignment"
+											}
+										],
+										"#tag-name": "action"
+									}
+								],
+								"#tag-name": "actions"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "user"
+									}
+								],
+								"#tag-name": "assignments"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Creative Writer Task Result",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Audience Editor",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "audienceEditor"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "audienceEditor"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "task"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "audienceEditor"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        277.12569608388776,",
+									"        438.5167571200785",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Audience Editor",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#tag-name": "agent-definition-external-reference-code",
+								"#value": "L_AUDIENCE_EDITOR"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Audience Editor Task Result",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "audienceEditorTaskResult"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "audienceEditorTaskResult"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "ai-hub-agent"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "audienceEditorTaskResult"
+							},
+							{
+								"#tag-name": "description",
+								"#value": "Create a task result with the agent output"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        765.5764304659263,",
+									"        433.7378683619282",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#tag-name": "name",
+												"#value": "createTaskResult"
+											},
+											{
+												"#tag-name": "script"
+											},
+											{
+												"#tag-name": "script-language",
+												"#value": "function#liferay-aihub-multi-agents-etc-spring-boot-workflow-action-task-result"
+											},
+											{
+												"#tag-name": "execution-type",
+												"#value": "onAssignment"
+											}
+										],
+										"#tag-name": "action"
+									}
+								],
+								"#tag-name": "actions"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "user"
+									}
+								],
+								"#tag-name": "assignments"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Audience Editor Task Result",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Style Editor",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "styleEditor"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "styleEditor"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "task"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "styleEditor"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        278.5785159081065,",
+									"        647.9265166415629",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Style Editor",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#tag-name": "agent-definition-external-reference-code",
+								"#value": "L_STYLE_EDITOR"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Style Editor Task Result",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "styleEditorTaskResult"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "styleEditorTaskResult"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "ai-hub-agent"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "styleEditorTaskResult"
+							},
+							{
+								"#tag-name": "description",
+								"#value": "Create a task result with the agent output"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        747.9349612206065,",
+									"        647.3048125400004",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#tag-name": "name",
+												"#value": "createTaskResult"
+											},
+											{
+												"#tag-name": "script"
+											},
+											{
+												"#tag-name": "script-language",
+												"#value": "function#liferay-aihub-multi-agents-etc-spring-boot-workflow-action-task-result"
+											},
+											{
+												"#tag-name": "execution-type",
+												"#value": "onAssignment"
+											}
+										],
+										"#tag-name": "action"
+									}
+								],
+								"#tag-name": "actions"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "user"
+									}
+								],
+								"#tag-name": "assignments"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Style Editor Task Result",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "End",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "end"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "end"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "task"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "start"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        277.924579948243,",
+									"        49.62287872487974",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#tag-name": "initial",
+								"#value": "true"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Start",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Creative Writer",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "creativeWriter"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "creativeWriter"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "state"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "end"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"terminal\": true,",
+									"    \"xy\": [",
+									"        280.116235634669,",
+									"        852.2950469150004",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "End",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							}
+						],
+						"#tag-name": "state"
+					}
+				],
+				"#tag-name": "workflow-definition",
+				"xmlns": "urn:liferay.com:liferay-workflow_7.4.0",
+				"xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+				"xsi:schemaLocation": "urn:liferay.com:liferay-workflow_7.4.0 http://www.liferay.com/dtd/liferay-workflow-definition_7_4_0.xsd"
+			},
+			"externalReferenceCode": "NOVEL_CREATOR",
+			"name": "Novel Creator",
+			"title": "Novel Creator",
+			"title_i18n": {
+				"en_US": "Novel Creator"
+			}
+		}
+	]
+}

@@ -13,3 +13,13 @@ liferay-aihub-multi-agents-etc-spring-boot-oaua:
     .serviceScheme: http
     name: Liferay AI Hub Multi Agents Etc Spring Boot OAuth Application User Agent
     type: oAuthApplicationUserAgent
+liferay-aihub-multi-agents-etc-spring-boot-object-action-novel-creator:
+    name: Liferay AI Hub Multi Agents Etc Spring Boot Object Action Novel Creator
+    oAuth2ApplicationExternalReferenceCode: liferay-aihub-multi-agents-etc-spring-boot-oaua
+    resourcePath: /object/action/novel-creator
+    type: objectAction
+liferay-aihub-multi-agents-etc-spring-boot-workflow-action-task-result:
+    name: Liferay AI Hub Multi Agents Etc Spring Boot Workflow Action Task Result
+    oAuth2ApplicationExternalReferenceCode: liferay-aihub-multi-agents-etc-spring-boot-oaua
+    resourcePath: /workflow/action/task-result
+    type: workflowAction
