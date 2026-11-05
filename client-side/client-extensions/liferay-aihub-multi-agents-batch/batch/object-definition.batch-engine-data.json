@@ -592,6 +592,138 @@
 				"code": 0
 			},
 			"titleObjectFieldName": "topic"
+		},
+		{
+			"active": true,
+			"externalReferenceCode": "EVENING_PLAN",
+			"label": {
+				"en_US": "Evening Plan"
+			},
+			"name": "EveningPlan",
+			"objectActions": [
+				{
+					"active": true,
+					"conditionExpression": "",
+					"externalReferenceCode": "EVENING_PLAN_START_EVENING_PLANNER",
+					"label": {
+						"en_US": "Start Evening Planner"
+					},
+					"name": "startEveningPlanner",
+					"objectActionExecutorKey": "function#liferay-aihub-multi-agents-etc-spring-boot-object-action-evening-planner",
+					"objectActionTriggerKey": "onAfterAdd",
+					"parameters": {
+					}
+				}
+			],
+			"objectFields": [
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"externalReferenceCode": "EVENING_PLAN_MOOD",
+					"indexed": true,
+					"indexedAsKeyword": false,
+					"label": {
+						"en_US": "Mood"
+					},
+					"name": "mood",
+					"required": true
+				}
+			],
+			"objectFolderExternalReferenceCode": "AGENT_WORKFLOWS",
+			"objectLayouts": [
+				{
+					"defaultObjectLayout": true,
+					"name": {
+						"en_US": "Evening Plan"
+					},
+					"objectLayoutTabs": [
+						{
+							"name": {
+								"en_US": "Details"
+							},
+							"objectLayoutBoxes": [
+								{
+									"collapsable": false,
+									"name": {
+										"en_US": "Brief"
+									},
+									"objectLayoutRows": [
+										{
+											"objectLayoutColumns": [
+												{
+													"objectFieldName": "mood",
+													"priority": 0,
+													"size": 12
+												}
+											],
+											"priority": 0
+										}
+									],
+									"priority": 0,
+									"type": "regular"
+								}
+							],
+							"priority": 0
+						},
+						{
+							"name": {
+								"en_US": "Task Results"
+							},
+							"objectLayoutBoxes": [
+							],
+							"objectRelationshipExternalReferenceCode": "EVENING_PLAN_TASK_RESULTS",
+							"priority": 1
+						}
+					]
+				}
+			],
+			"objectRelationships": [
+				{
+					"deletionType": "cascade",
+					"externalReferenceCode": "EVENING_PLAN_TASK_RESULTS",
+					"label": {
+						"en_US": "Task Results"
+					},
+					"name": "eveningPlanTaskResults",
+					"objectDefinitionExternalReferenceCode1": "EVENING_PLAN",
+					"objectDefinitionExternalReferenceCode2": "TASK_RESULT",
+					"objectDefinitionName2": "TaskResult",
+					"type": "oneToMany"
+				}
+			],
+			"objectViews": [
+				{
+					"defaultObjectView": true,
+					"externalReferenceCode": "EVENING_PLAN_DEFAULT_VIEW",
+					"name": {
+						"en_US": "Evening Plans"
+					},
+					"objectViewColumns": [
+						{
+							"objectFieldName": "id",
+							"priority": 0
+						},
+						{
+							"objectFieldName": "mood",
+							"priority": 1
+						}
+					],
+					"objectViewFilterColumns": [
+					],
+					"objectViewSortColumns": [
+					]
+				}
+			],
+			"panelCategoryKey": "control_panel.object",
+			"pluralLabel": {
+				"en_US": "Evening Plans"
+			},
+			"portlet": true,
+			"scope": "company",
+			"status": {
+				"code": 0
+			},
+			"titleObjectFieldName": "mood"
 		}
 	]
 }

@@ -13,6 +13,11 @@ liferay-aihub-multi-agents-etc-spring-boot-oaua:
     .serviceScheme: http
     name: Liferay AI Hub Multi Agents Etc Spring Boot OAuth Application User Agent
     type: oAuthApplicationUserAgent
+liferay-aihub-multi-agents-etc-spring-boot-object-action-evening-planner:
+    name: Liferay AI Hub Multi Agents Etc Spring Boot Object Action Evening Planner
+    oAuth2ApplicationExternalReferenceCode: liferay-aihub-multi-agents-etc-spring-boot-oaua
+    resourcePath: /object/action/evening-planner
+    type: objectAction
 liferay-aihub-multi-agents-etc-spring-boot-object-action-expert-router:
     name: Liferay AI Hub Multi Agents Etc Spring Boot Object Action Expert Router
     oAuth2ApplicationExternalReferenceCode: liferay-aihub-multi-agents-etc-spring-boot-oaua
@@ -28,6 +33,16 @@ liferay-aihub-multi-agents-etc-spring-boot-object-action-styled-writer:
     oAuth2ApplicationExternalReferenceCode: liferay-aihub-multi-agents-etc-spring-boot-oaua
     resourcePath: /object/action/styled-writer
     type: objectAction
+liferay-aihub-multi-agents-etc-spring-boot-workflow-action-evening-plan-combiner:
+    name: Liferay AI Hub Multi Agents Etc Spring Boot Workflow Action Evening Plan Combiner
+    oAuth2ApplicationExternalReferenceCode: liferay-aihub-multi-agents-etc-spring-boot-oaua
+    resourcePath: /workflow/action/evening-plan-combiner
+    type: workflowAction
+liferay-aihub-multi-agents-etc-spring-boot-workflow-action-evening-plan-task-result:
+    name: Liferay AI Hub Multi Agents Etc Spring Boot Workflow Action Evening Plan Task Result
+    oAuth2ApplicationExternalReferenceCode: liferay-aihub-multi-agents-etc-spring-boot-oaua
+    resourcePath: /workflow/action/evening-plan-task-result
+    type: workflowAction
 liferay-aihub-multi-agents-etc-spring-boot-workflow-action-expert-request-task-result:
     name: Liferay AI Hub Multi Agents Etc Spring Boot Workflow Action Expert Request Task Result
     oAuth2ApplicationExternalReferenceCode: liferay-aihub-multi-agents-etc-spring-boot-oaua

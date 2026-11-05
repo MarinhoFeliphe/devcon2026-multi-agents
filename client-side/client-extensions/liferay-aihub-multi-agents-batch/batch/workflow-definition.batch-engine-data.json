@@ -2118,6 +2118,716 @@
 			"title_i18n": {
 				"en_US": "Styled Writer"
 			}
+		},
+		{
+			"active": true,
+			"content": {
+				"#child-nodes": [
+					{
+						"#tag-name": "name",
+						"#value": "Evening Planner"
+					},
+					{
+						"#tag-name": "version",
+						"#value": "1"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "foodExpert"
+							},
+							{
+								"#tag-name": "description",
+								"#value": "Invoke an AI Hub Agent"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        534.4670841160802,",
+									"        325.7737393526474",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Food Expert",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#tag-name": "agent-definition-external-reference-code",
+								"#value": "L_FOOD_EXPERT"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Food Expert Task Result",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "foodExpertTaskResult"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "foodExpertTaskResult"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "ai-hub-agent"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "foodExpertTaskResult"
+							},
+							{
+								"#tag-name": "description",
+								"#value": "Create a task result with the agent output"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        534.6982242659489,",
+									"        490.2359674315661",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#tag-name": "name",
+												"#value": "createTaskResult"
+											},
+											{
+												"#tag-name": "script"
+											},
+											{
+												"#tag-name": "script-language",
+												"#value": "function#liferay-aihub-multi-agents-etc-spring-boot-workflow-action-evening-plan-task-result"
+											},
+											{
+												"#tag-name": "execution-type",
+												"#value": "onAssignment"
+											}
+										],
+										"#tag-name": "action"
+									}
+								],
+								"#tag-name": "actions"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "user"
+									}
+								],
+								"#tag-name": "assignments"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Food Expert Task Result",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Join",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "join"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "join"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "task"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "movieExpert"
+							},
+							{
+								"#tag-name": "description",
+								"#value": "Invoke an AI Hub Agent"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        35.316323606200115,",
+									"        322.8491702262201",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Movie Expert",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#tag-name": "agent-definition-external-reference-code",
+								"#value": "L_MOVIE_EXPERT"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Movie Expert Task Result",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "movieExpertTaskResult"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "movieExpertTaskResult"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "ai-hub-agent"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "movieExpertTaskResult"
+							},
+							{
+								"#tag-name": "description",
+								"#value": "Create a task result with the agent output"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        33.85396389989486,",
+									"        485.3113897781864",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#tag-name": "name",
+												"#value": "createTaskResult"
+											},
+											{
+												"#tag-name": "script"
+											},
+											{
+												"#tag-name": "script-language",
+												"#value": "function#liferay-aihub-multi-agents-etc-spring-boot-workflow-action-evening-plan-task-result"
+											},
+											{
+												"#tag-name": "execution-type",
+												"#value": "onAssignment"
+											}
+										],
+										"#tag-name": "action"
+									}
+								],
+								"#tag-name": "actions"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "user"
+									}
+								],
+								"#tag-name": "assignments"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Movie Expert Task Result",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Join",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "join"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "join"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "task"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "combineEveningPlans"
+							},
+							{
+								"#tag-name": "description",
+								"#value": "Combine the meals and movies into evening plans and create a task result with them"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        268.99991684056664,",
+									"        820.9440200124476",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#tag-name": "name",
+												"#value": "createTaskResult"
+											},
+											{
+												"#tag-name": "script"
+											},
+											{
+												"#tag-name": "script-language",
+												"#value": "function#liferay-aihub-multi-agents-etc-spring-boot-workflow-action-evening-plan-combiner"
+											},
+											{
+												"#tag-name": "execution-type",
+												"#value": "onAssignment"
+											}
+										],
+										"#tag-name": "action"
+									}
+								],
+								"#tag-name": "actions"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "user"
+									}
+								],
+								"#tag-name": "assignments"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Combine Evening Plans",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "End",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "end"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "end"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "task"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "fork"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        271,",
+									"        137",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Fork",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Food Expert",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "foodExpert"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "foodExpert"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									},
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Movie Expert",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "movieExpert"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "movieExpert"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "false"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "fork"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "join"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        269.92447744004147,",
+									"        665.2457307108982",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Join",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Combine Evening Plans",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "combineEveningPlans"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "combineEveningPlans"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "join"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "start"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"xy\": [",
+									"        272,",
+									"        4",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#tag-name": "initial",
+								"#value": "true"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "Start",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#child-nodes": [
+											{
+												"#child-nodes": [
+													{
+														"#tag-name": "label",
+														"#value": "Fork",
+														"language-id": "en_US"
+													}
+												],
+												"#tag-name": "labels"
+											},
+											{
+												"#tag-name": "name",
+												"#value": "fork"
+											},
+											{
+												"#tag-name": "target",
+												"#value": "fork"
+											},
+											{
+												"#tag-name": "default",
+												"#value": "true"
+											}
+										],
+										"#tag-name": "transition"
+									}
+								],
+								"#tag-name": "transitions"
+							}
+						],
+						"#tag-name": "state"
+					},
+					{
+						"#child-nodes": [
+							{
+								"#tag-name": "name",
+								"#value": "end"
+							},
+							{
+								"#cdata-value": [
+									"{",
+									"    \"terminal\": true,",
+									"    \"xy\": [",
+									"        267.537632277353,",
+									"        980.7981731399526",
+									"    ]",
+									"}"
+								],
+								"#tag-name": "metadata"
+							},
+							{
+								"#child-nodes": [
+									{
+										"#tag-name": "label",
+										"#value": "End",
+										"language-id": "en_US"
+									}
+								],
+								"#tag-name": "labels"
+							}
+						],
+						"#tag-name": "state"
+					}
+				],
+				"#tag-name": "workflow-definition",
+				"xmlns": "urn:liferay.com:liferay-workflow_7.4.0",
+				"xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+				"xsi:schemaLocation": "urn:liferay.com:liferay-workflow_7.4.0 http://www.liferay.com/dtd/liferay-workflow-definition_7_4_0.xsd"
+			},
+			"externalReferenceCode": "EVENING_PLANNER",
+			"name": "Evening Planner",
+			"title": "Evening Planner",
+			"title_i18n": {
+				"en_US": "Evening Planner"
+			}
 		}
 	]
 }
