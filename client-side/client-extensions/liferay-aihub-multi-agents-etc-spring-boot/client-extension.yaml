@@ -23,10 +23,25 @@ liferay-aihub-multi-agents-etc-spring-boot-object-action-novel-creator:
     oAuth2ApplicationExternalReferenceCode: liferay-aihub-multi-agents-etc-spring-boot-oaua
     resourcePath: /object/action/novel-creator
     type: objectAction
+liferay-aihub-multi-agents-etc-spring-boot-object-action-styled-writer:
+    name: Liferay AI Hub Multi Agents Etc Spring Boot Object Action Styled Writer
+    oAuth2ApplicationExternalReferenceCode: liferay-aihub-multi-agents-etc-spring-boot-oaua
+    resourcePath: /object/action/styled-writer
+    type: objectAction
 liferay-aihub-multi-agents-etc-spring-boot-workflow-action-expert-request-task-result:
     name: Liferay AI Hub Multi Agents Etc Spring Boot Workflow Action Expert Request Task Result
     oAuth2ApplicationExternalReferenceCode: liferay-aihub-multi-agents-etc-spring-boot-oaua
     resourcePath: /workflow/action/expert-request-task-result
+    type: workflowAction
+liferay-aihub-multi-agents-etc-spring-boot-workflow-action-style-review-loop:
+    name: Liferay AI Hub Multi Agents Etc Spring Boot Workflow Action Style Review Loop
+    oAuth2ApplicationExternalReferenceCode: liferay-aihub-multi-agents-etc-spring-boot-oaua
+    resourcePath: /workflow/action/style-review-loop
+    type: workflowAction
+liferay-aihub-multi-agents-etc-spring-boot-workflow-action-styled-story-task-result:
+    name: Liferay AI Hub Multi Agents Etc Spring Boot Workflow Action Styled Story Task Result
+    oAuth2ApplicationExternalReferenceCode: liferay-aihub-multi-agents-etc-spring-boot-oaua
+    resourcePath: /workflow/action/styled-story-task-result
     type: workflowAction
 liferay-aihub-multi-agents-etc-spring-boot-workflow-action-task-result:
     name: Liferay AI Hub Multi Agents Etc Spring Boot Workflow Action Task Result

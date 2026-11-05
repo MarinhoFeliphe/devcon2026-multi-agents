@@ -439,6 +439,159 @@
 				"code": 0
 			},
 			"titleObjectFieldName": "request"
+		},
+		{
+			"active": true,
+			"externalReferenceCode": "STYLED_STORY",
+			"label": {
+				"en_US": "Styled Story"
+			},
+			"name": "StyledStory",
+			"objectActions": [
+				{
+					"active": true,
+					"conditionExpression": "",
+					"externalReferenceCode": "STYLED_STORY_START_STYLED_WRITER",
+					"label": {
+						"en_US": "Start Styled Writer"
+					},
+					"name": "startStyledWriter",
+					"objectActionExecutorKey": "function#liferay-aihub-multi-agents-etc-spring-boot-object-action-styled-writer",
+					"objectActionTriggerKey": "onAfterAdd",
+					"parameters": {
+					}
+				}
+			],
+			"objectFields": [
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"externalReferenceCode": "STYLED_STORY_STYLE",
+					"indexed": true,
+					"indexedAsKeyword": false,
+					"label": {
+						"en_US": "Style"
+					},
+					"name": "style",
+					"required": true
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"externalReferenceCode": "STYLED_STORY_TOPIC",
+					"indexed": true,
+					"indexedAsKeyword": false,
+					"label": {
+						"en_US": "Topic"
+					},
+					"name": "topic",
+					"required": true
+				}
+			],
+			"objectFolderExternalReferenceCode": "AGENT_WORKFLOWS",
+			"objectLayouts": [
+				{
+					"defaultObjectLayout": true,
+					"name": {
+						"en_US": "Styled Story"
+					},
+					"objectLayoutTabs": [
+						{
+							"name": {
+								"en_US": "Details"
+							},
+							"objectLayoutBoxes": [
+								{
+									"collapsable": false,
+									"name": {
+										"en_US": "Brief"
+									},
+									"objectLayoutRows": [
+										{
+											"objectLayoutColumns": [
+												{
+													"objectFieldName": "topic",
+													"priority": 0,
+													"size": 6
+												},
+												{
+													"objectFieldName": "style",
+													"priority": 1,
+													"size": 6
+												}
+											],
+											"priority": 0
+										}
+									],
+									"priority": 0,
+									"type": "regular"
+								}
+							],
+							"priority": 0
+						},
+						{
+							"name": {
+								"en_US": "Task Results"
+							},
+							"objectLayoutBoxes": [
+							],
+							"objectRelationshipExternalReferenceCode": "STYLED_STORY_TASK_RESULTS",
+							"priority": 1
+						}
+					]
+				}
+			],
+			"objectRelationships": [
+				{
+					"deletionType": "cascade",
+					"externalReferenceCode": "STYLED_STORY_TASK_RESULTS",
+					"label": {
+						"en_US": "Task Results"
+					},
+					"name": "styledStoryTaskResults",
+					"objectDefinitionExternalReferenceCode1": "STYLED_STORY",
+					"objectDefinitionExternalReferenceCode2": "TASK_RESULT",
+					"objectDefinitionName2": "TaskResult",
+					"type": "oneToMany"
+				}
+			],
+			"objectViews": [
+				{
+					"defaultObjectView": true,
+					"externalReferenceCode": "STYLED_STORY_DEFAULT_VIEW",
+					"name": {
+						"en_US": "Styled Stories"
+					},
+					"objectViewColumns": [
+						{
+							"objectFieldName": "id",
+							"priority": 0
+						},
+						{
+							"objectFieldName": "topic",
+							"priority": 1
+						},
+						{
+							"objectFieldName": "style",
+							"priority": 2
+						}
+					],
+					"objectViewFilterColumns": [
+					],
+					"objectViewSortColumns": [
+					]
+				}
+			],
+			"panelCategoryKey": "control_panel.object",
+			"pluralLabel": {
+				"en_US": "Styled Stories"
+			},
+			"portlet": true,
+			"scope": "company",
+			"status": {
+				"code": 0
+			},
+			"titleObjectFieldName": "topic"
 		}
 	]
 }
